@@ -1,0 +1,12 @@
+2021-07-18 20:47:23.974 [main] INFO  cn.vuffy.o2o.service.WechatAuthServiceTest - Starting WechatAuthServiceTest using Java 1.8.0_271 on MacBook-Pro.local with PID 14218 (started by liliansong in /Users/liliansong/IdeaProjects/SpringBoot/o2o)
+2021-07-18 20:47:23.983 [main] INFO  cn.vuffy.o2o.service.WechatAuthServiceTest - No active profile set, falling back to default profiles: default
+2021-07-18 20:47:27.423 [main] INFO  cn.vuffy.o2o.service.WechatAuthServiceTest - Started WechatAuthServiceTest in 3.837 seconds (JVM running for 5.144)
+2021-07-18 20:47:37.541 [main] INFO  cn.vuffy.o2o.service.WechatAuthServiceTest - Starting WechatAuthServiceTest using Java 1.8.0_271 on MacBook-Pro.local with PID 14233 (started by liliansong in /Users/liliansong/IdeaProjects/SpringBoot/o2o)
+2021-07-18 20:47:37.543 [main] INFO  cn.vuffy.o2o.service.WechatAuthServiceTest - No active profile set, falling back to default profiles: default
+2021-07-18 20:47:40.125 [main] INFO  cn.vuffy.o2o.service.WechatAuthServiceTest - Started WechatAuthServiceTest in 2.964 seconds (JVM running for 3.974)
+2021-07-18 20:48:05.274 [main] INFO  cn.vuffy.o2o.service.WechatAuthServiceTest - Starting WechatAuthServiceTest using Java 1.8.0_271 on MacBook-Pro.local with PID 14254 (started by liliansong in /Users/liliansong/IdeaProjects/SpringBoot/o2o)
+2021-07-18 20:48:05.277 [main] INFO  cn.vuffy.o2o.service.WechatAuthServiceTest - No active profile set, falling back to default profiles: default
+2021-07-18 20:48:07.930 [main] INFO  cn.vuffy.o2o.service.WechatAuthServiceTest - Started WechatAuthServiceTest in 2.962 seconds (JVM running for 4.023)
+2021-07-18 20:49:04.082 [main] INFO  cn.vuffy.o2o.service.AreaServiceTest - Starting AreaServiceTest using Java 1.8.0_271 on MacBook-Pro.local with PID 14301 (started by liliansong in /Users/liliansong/IdeaProjects/SpringBoot/o2o)
+2021-07-18 20:49:04.084 [main] INFO  cn.vuffy.o2o.service.AreaServiceTest - No active profile set, falling back to default profiles: default
+2021-07-18 20:49:06.704 [main] INFO  cn.vuffy.o2o.service.AreaServiceTest - Started AreaServiceTest in 3.18 seconds (JVM running for 4.237)

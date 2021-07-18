@@ -1,0 +1,30 @@
+2021-07-18 20:47:23.978 [main] DEBUG cn.vuffy.o2o.service.WechatAuthServiceTest - Running with Spring Boot v2.4.8, Spring v5.3.8
+2021-07-18 20:47:28.449 [main] DEBUG cn.vuffy.o2o.dao.PersonInfoDao.insertPersonInfo - ==>  Preparing: INSERT INTO tb_person_info(user_name, gender, email, profile_img, user_type, create_time, last_edit_time, enable_status) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2021-07-18 20:47:28.510 [main] DEBUG cn.vuffy.o2o.dao.PersonInfoDao.insertPersonInfo - ==> Parameters: 测试一下(String), null, null, null, 1(Integer), 2021-07-18 20:47:28.399(Timestamp), null, 1(Integer)
+2021-07-18 20:47:28.512 [main] DEBUG cn.vuffy.o2o.dao.PersonInfoDao.insertPersonInfo - <==    Updates: 1
+2021-07-18 20:47:28.536 [main] DEBUG cn.vuffy.o2o.dao.WechatAuthDao.insertWechatAuth - ==>  Preparing: INSERT INTO tb_wechat_auth(user_id, open_id, create_time) VALUES (?, ?, ?)
+2021-07-18 20:47:28.542 [main] DEBUG cn.vuffy.o2o.dao.WechatAuthDao.insertWechatAuth - ==> Parameters: 11(Long), fhjkdahjjlkfdslfl;sjadl;jfl;j;alsdkofisdfkkfhdk(String), 2021-07-18 20:47:28.399(Timestamp)
+2021-07-18 20:47:28.543 [main] DEBUG cn.vuffy.o2o.dao.WechatAuthDao.insertWechatAuth - <==    Updates: 1
+2021-07-18 20:47:28.555 [main] DEBUG c.v.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - ==>  Preparing: SELECT w.wechat_auth_id, w.open_id, w.create_time, p.user_id, p.user_name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_wechat_auth w LEFT JOIN tb_person_info p ON w.user_id = p.user_id WHERE w.open_id = ?
+2021-07-18 20:47:28.556 [main] DEBUG c.v.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - ==> Parameters: fhjkdahjjlkfdslfl;sjadl;jfl;j;alsdkofisdfkkfhdk(String)
+2021-07-18 20:47:28.571 [main] DEBUG c.v.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - <==      Total: 1
+2021-07-18 20:47:37.542 [main] DEBUG cn.vuffy.o2o.service.WechatAuthServiceTest - Running with Spring Boot v2.4.8, Spring v5.3.8
+2021-07-18 20:47:40.773 [main] DEBUG cn.vuffy.o2o.dao.PersonInfoDao.insertPersonInfo - ==>  Preparing: INSERT INTO tb_person_info(user_name, gender, email, profile_img, user_type, create_time, last_edit_time, enable_status) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2021-07-18 20:47:40.830 [main] DEBUG cn.vuffy.o2o.dao.PersonInfoDao.insertPersonInfo - ==> Parameters: 测试一下(String), null, null, null, 1(Integer), 2021-07-18 20:47:40.731(Timestamp), null, 1(Integer)
+2021-07-18 20:47:40.834 [main] DEBUG cn.vuffy.o2o.dao.PersonInfoDao.insertPersonInfo - <==    Updates: 1
+2021-07-18 20:47:40.854 [main] DEBUG cn.vuffy.o2o.dao.WechatAuthDao.insertWechatAuth - ==>  Preparing: INSERT INTO tb_wechat_auth(user_id, open_id, create_time) VALUES (?, ?, ?)
+2021-07-18 20:47:40.858 [main] DEBUG cn.vuffy.o2o.dao.WechatAuthDao.insertWechatAuth - ==> Parameters: 12(Long), fhjkdahjjlkfdslfl;sjadl;jfl;j;alsdkofisdfkkfhdk(String), 2021-07-18 20:47:40.731(Timestamp)
+2021-07-18 20:48:05.275 [main] DEBUG cn.vuffy.o2o.service.WechatAuthServiceTest - Running with Spring Boot v2.4.8, Spring v5.3.8
+2021-07-18 20:48:08.549 [main] DEBUG cn.vuffy.o2o.dao.PersonInfoDao.insertPersonInfo - ==>  Preparing: INSERT INTO tb_person_info(user_name, gender, email, profile_img, user_type, create_time, last_edit_time, enable_status) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2021-07-18 20:48:08.597 [main] DEBUG cn.vuffy.o2o.dao.PersonInfoDao.insertPersonInfo - ==> Parameters: 测试一下(String), null, null, null, 1(Integer), 2021-07-18 20:48:08.519(Timestamp), null, 1(Integer)
+2021-07-18 20:48:08.599 [main] DEBUG cn.vuffy.o2o.dao.PersonInfoDao.insertPersonInfo - <==    Updates: 1
+2021-07-18 20:48:08.619 [main] DEBUG cn.vuffy.o2o.dao.WechatAuthDao.insertWechatAuth - ==>  Preparing: INSERT INTO tb_wechat_auth(user_id, open_id, create_time) VALUES (?, ?, ?)
+2021-07-18 20:48:08.622 [main] DEBUG cn.vuffy.o2o.dao.WechatAuthDao.insertWechatAuth - ==> Parameters: 13(Long), fkkfhdk(String), 2021-07-18 20:48:08.519(Timestamp)
+2021-07-18 20:48:08.624 [main] DEBUG cn.vuffy.o2o.dao.WechatAuthDao.insertWechatAuth - <==    Updates: 1
+2021-07-18 20:48:08.633 [main] DEBUG c.v.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - ==>  Preparing: SELECT w.wechat_auth_id, w.open_id, w.create_time, p.user_id, p.user_name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_wechat_auth w LEFT JOIN tb_person_info p ON w.user_id = p.user_id WHERE w.open_id = ?
+2021-07-18 20:48:08.634 [main] DEBUG c.v.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - ==> Parameters: fkkfhdk(String)
+2021-07-18 20:48:08.645 [main] DEBUG c.v.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - <==      Total: 1
+2021-07-18 20:49:04.083 [main] DEBUG cn.vuffy.o2o.service.AreaServiceTest - Running with Spring Boot v2.4.8, Spring v5.3.8
+2021-07-18 20:49:07.560 [main] DEBUG cn.vuffy.o2o.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC
+2021-07-18 20:49:07.605 [main] DEBUG cn.vuffy.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2021-07-18 20:49:07.649 [main] DEBUG cn.vuffy.o2o.dao.AreaDao.queryArea - <==      Total: 3
