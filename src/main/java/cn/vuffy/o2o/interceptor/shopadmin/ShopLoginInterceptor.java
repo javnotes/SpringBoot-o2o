@@ -1,7 +1,7 @@
-package cn.vuffy.o2o.shopadmin;
+package cn.vuffy.o2o.interceptor.shopadmin;
 
+import cn.vuffy.o2o.entity.PersonInfo;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
-import org.vuffy.o2o.entity.PersonInfo;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
