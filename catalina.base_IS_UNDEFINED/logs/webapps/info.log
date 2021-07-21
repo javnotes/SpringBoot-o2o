@@ -22,3 +22,6 @@
 2021-07-21 09:28:54.154 [main] INFO  cn.vuffy.o2o.O2oApplication - Starting O2oApplication on chinalife with PID 8620 (C:\Users\chinalife\Desktop\SpringBoot-o2o\target\classes started by chinalife in C:\Users\chinalife\Desktop\SpringBoot-o2o)
 2021-07-21 09:28:54.157 [main] INFO  cn.vuffy.o2o.O2oApplication - No active profile set, falling back to default profiles: default
 2021-07-21 09:28:56.772 [main] INFO  cn.vuffy.o2o.O2oApplication - Started O2oApplication in 2.906 seconds (JVM running for 4.754)
+2021-07-21 10:11:53.607 [main] INFO  cn.vuffy.o2o.dao.AreaDaoTest - Starting AreaDaoTest on chinalife with PID 10852 (started by chinalife in C:\Users\chinalife\Desktop\SpringBoot-o2o)
+2021-07-21 10:11:53.608 [main] INFO  cn.vuffy.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2021-07-21 10:11:57.122 [main] INFO  cn.vuffy.o2o.dao.AreaDaoTest - Started AreaDaoTest in 3.768 seconds (JVM running for 4.632)
