@@ -1,5 +1,7 @@
 package cn.vuffy.o2o.config.web;
 
+import cn.vuffy.o2o.interceptor.shopadmin.ShopLoginInterceptor;
+import cn.vuffy.o2o.interceptor.shopadmin.ShopPermissionInterceptor;
 import com.google.code.kaptcha.servlet.KaptchaServlet;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Value;
@@ -10,10 +12,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.ViewResolver;
-import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import javax.servlet.ServletException;
@@ -42,7 +41,7 @@ public class MvcConfiguration implements WebMvcConfigurer, ApplicationContextAwa
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
 //        registry.addResourceHandler("/resources/**").addResourceLocations("classpath:/resources/");
-         registry.addResourceHandler("/upload/**").addResourceLocations("file:/Users/liliansong/Documents/image/upload/");
+        registry.addResourceHandler("/upload/**").addResourceLocations("file:/Users/liliansong/Documents/image/upload/");
     }
 
     /**
@@ -132,39 +131,40 @@ public class MvcConfiguration implements WebMvcConfigurer, ApplicationContextAwa
     /**
      * 添加拦截器配置
      */
-//    @Override
-//    public void addInterceptors(InterceptorRegistry registry) {
-//        /** 店家管理系统拦截部分 **/
-//        String interceptPath = "/shopadmin/**";
-//        // 注册拦截器
-//        InterceptorRegistration loginIR = registry.addInterceptor(new ShopLoginInterceptor());
-//        // 配置拦截的路径
-//        loginIR.addPathPatterns(interceptPath);
-//        /** shopauthmanagement page **/
-//        loginIR.excludePathPatterns("/shopadmin/addshopauthmap");
-//        /** scan **/
-//        loginIR.excludePathPatterns("/shopadmin/adduserproductmap");
-//        loginIR.excludePathPatterns("/shopadmin/exchangeaward");
-//        // 还可以注册其它的拦截器
-//        InterceptorRegistration permissionIR = registry.addInterceptor(new ShopPermissionInterceptor());
-//        // 配置拦截的路径
-//        permissionIR.addPathPatterns(interceptPath);
-//        // 配置不拦截的路径
-//        /** shoplist page **/
-//        permissionIR.excludePathPatterns("/shopadmin/shoplist");
-//        permissionIR.excludePathPatterns("/shopadmin/getshoplist");
-//        /** shopregister page **/
-//        permissionIR.excludePathPatterns("/shopadmin/getshopinitinfo");
-//        permissionIR.excludePathPatterns("/shopadmin/registershop");
-//        permissionIR.excludePathPatterns("/shopadmin/shopoperation");
-//        /** shopmanage page **/
-//        permissionIR.excludePathPatterns("/shopadmin/shopmanagement");
-//        permissionIR.excludePathPatterns("/shopadmin/getshopmanagementinfo");
-//        /** shopauthmanagement page **/
-//        permissionIR.excludePathPatterns("/shopadmin/addshopauthmap");
-//        /** scan **/
-//        permissionIR.excludePathPatterns("/shopadmin/adduserproductmap");
-//        permissionIR.excludePathPatterns("/shopadmin/exchangeaward");
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        /** 店家管理系统拦截部分 **/
+        String interceptPath = "/shopadmin/**";
+        // 注册拦截器
+        InterceptorRegistration loginIR = registry.addInterceptor(new ShopLoginInterceptor());
+        // 配置拦截的路径
+        loginIR.addPathPatterns(interceptPath);
+        /** shopauthmanagement page **/
+        loginIR.excludePathPatterns("/shopadmin/addshopauthmap");
+        /** scan **/
+        loginIR.excludePathPatterns("/shopadmin/adduserproductmap");
+        loginIR.excludePathPatterns("/shopadmin/exchangeaward");
+        // 还可以注册其它的拦截器
+        InterceptorRegistration permissionIR = registry.addInterceptor(new ShopPermissionInterceptor());
+        // 配置拦截的路径
+        permissionIR.addPathPatterns(interceptPath);
+        // 配置不拦截的路径
+        /** shoplist page **/
+        permissionIR.excludePathPatterns("/shopadmin/shoplist");
+        permissionIR.excludePathPatterns("/shopadmin/getshoplist");
+        /** shopregister page **/
+        permissionIR.excludePathPatterns("/shopadmin/getshopinitinfo");
+        permissionIR.excludePathPatterns("/shopadmin/registershop");
+        permissionIR.excludePathPatterns("/shopadmin/shopoperation");
+        /** shopmanage page **/
+        permissionIR.excludePathPatterns("/shopadmin/shopmanagement");
+        permissionIR.excludePathPatterns("/shopadmin/getshopmanagementinfo");
+        /** shopauthmanagement page **/
+        permissionIR.excludePathPatterns("/shopadmin/addshopauthmap");
+        /** scan **/
+        permissionIR.excludePathPatterns("/shopadmin/adduserproductmap");
+        permissionIR.excludePathPatterns("/shopadmin/exchangeaward");
+
 //        /** 超级管理员系统拦截部分 **/
 //        interceptPath = "/superadmin/**";
 //        // 注册拦截器
@@ -178,5 +178,5 @@ public class MvcConfiguration implements WebMvcConfigurer, ApplicationContextAwa
 //        superadminloginIR.excludePathPatterns("/superadmin/clearcache4area");
 //        superadminloginIR.excludePathPatterns("/superadmin/clearcache4headline");
 //        superadminloginIR.excludePathPatterns("/superadmin/clearcache4shopcategory");
-//    }
+    }
 }

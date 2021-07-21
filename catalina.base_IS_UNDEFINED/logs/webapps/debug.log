@@ -204,3 +204,5 @@
 2021-07-21 07:41:01.988 [http-nio-8080-exec-9] DEBUG cn.vuffy.o2o.dao.ProductDao.queryProductCount - ==>  Preparing: SELECT COUNT(1) FROM tb_product WHERE shop_id = ? and enable_status = ?
 2021-07-21 07:41:01.988 [http-nio-8080-exec-9] DEBUG cn.vuffy.o2o.dao.ProductDao.queryProductCount - ==> Parameters: 27(Long), 1(Integer)
 2021-07-21 07:41:01.990 [http-nio-8080-exec-9] DEBUG cn.vuffy.o2o.dao.ProductDao.queryProductCount - <==      Total: 1
+2021-07-21 09:27:55.051 [main] DEBUG cn.vuffy.o2o.O2oApplication - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-07-21 09:28:54.156 [main] DEBUG cn.vuffy.o2o.O2oApplication - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
