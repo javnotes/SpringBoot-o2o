@@ -11,6 +11,7 @@ import cn.vuffy.o2o.exceptions.ShopOperationException;
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
+import java.security.SecureRandom;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -18,11 +19,11 @@ import java.util.Random;
 // 工具类，封装 thumbnailator 方法
 public class ImageUtil {
 
-    private static String basePath =
-            Thread.currentThread().getContextClassLoader().getResource("").getPath();
+//    private static String basePath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
+    private static String basePath = PathUtil.getImageBasePath();
     private static final SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat("yyyyMMddHHmmss");
 
-    private static final Random RANDOM = new Random();
+    private static final SecureRandom RANDOM = new SecureRandom();
 
     private static Logger logger = LoggerFactory.getLogger(ImageUtil.class);
 

@@ -204,6 +204,7 @@
 2021-07-21 07:41:01.988 [http-nio-8080-exec-9] DEBUG cn.vuffy.o2o.dao.ProductDao.queryProductCount - ==>  Preparing: SELECT COUNT(1) FROM tb_product WHERE shop_id = ? and enable_status = ?
 2021-07-21 07:41:01.988 [http-nio-8080-exec-9] DEBUG cn.vuffy.o2o.dao.ProductDao.queryProductCount - ==> Parameters: 27(Long), 1(Integer)
 2021-07-21 07:41:01.990 [http-nio-8080-exec-9] DEBUG cn.vuffy.o2o.dao.ProductDao.queryProductCount - <==      Total: 1
+<<<<<<< HEAD
 2021-07-21 08:02:33.618 [http-nio-8080-exec-8] DEBUG cn.vuffy.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ?
 2021-07-21 08:02:33.620 [http-nio-8080-exec-1] DEBUG cn.vuffy.o2o.dao.ProductDao.queryProductList - ==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, point, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? and enable_status = ? ORDER BY priority DESC LIMIT ?, ?;
 2021-07-21 08:02:33.620 [http-nio-8080-exec-8] DEBUG cn.vuffy.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 27(Long)
@@ -535,3 +536,9 @@
 2021-07-21 12:30:43.962 [http-nio-8080-exec-9] DEBUG cn.vuffy.o2o.dao.ProductDao.queryProductCount - ==> Parameters: 27(Long), 1(Integer)
 2021-07-21 12:30:43.964 [http-nio-8080-exec-9] DEBUG cn.vuffy.o2o.dao.ProductDao.queryProductCount - <==      Total: 1
 2021-07-21 12:32:00.304 [main] DEBUG cn.vuffy.o2o.O2oApplication - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+=======
+2021-07-21 09:27:55.051 [main] DEBUG cn.vuffy.o2o.O2oApplication - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-07-21 09:28:54.156 [main] DEBUG cn.vuffy.o2o.O2oApplication - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-07-21 10:11:53.607 [main] DEBUG cn.vuffy.o2o.dao.AreaDaoTest - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-07-21 11:14:37.240 [main] DEBUG cn.vuffy.o2o.O2oApplication - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+>>>>>>> 775be875ca98277b95b89a58982b62ce195965de
