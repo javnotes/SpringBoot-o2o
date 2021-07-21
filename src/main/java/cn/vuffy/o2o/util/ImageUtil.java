@@ -45,7 +45,7 @@ public class ImageUtil {
     }
 
     /**
-     * 处理缩略图，并返回新生成相对路径 Spring 自带的文件处理对象 CommonsMultipartFile
+     * 处理(含店铺)缩略图，并返回新生成相对路径 Spring 自带的文件处理对象 CommonsMultipartFile
      *
      * @author vuffy
      * @date 2021/6/16 5:44 上午
@@ -169,6 +169,4 @@ public class ImageUtil {
             fileOrPath.delete();
         }
     }
-
-
 }
