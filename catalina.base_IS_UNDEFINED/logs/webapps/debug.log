@@ -207,3 +207,4 @@
 2021-07-21 09:27:55.051 [main] DEBUG cn.vuffy.o2o.O2oApplication - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
 2021-07-21 09:28:54.156 [main] DEBUG cn.vuffy.o2o.O2oApplication - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
 2021-07-21 10:11:53.607 [main] DEBUG cn.vuffy.o2o.dao.AreaDaoTest - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-07-21 11:14:37.240 [main] DEBUG cn.vuffy.o2o.O2oApplication - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
