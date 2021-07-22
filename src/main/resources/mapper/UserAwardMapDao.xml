@@ -4,6 +4,51 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- 命名空间 -->
 <mapper namespace="cn.vuffy.o2o.dao.UserAwardMapDao">
+    <resultMap id="userAwardResultMap" type="cn.vuffy.o2o.entity.UserAwardMap">
+        <id column="user_award_id" property="userAwardId"/>
+        <result column="create_time" property="createTime"/>
+        <result column="used_status" property="usedStatus"/>
+        <result column="point" property="point"/>
+        <association property="user" column="user_id" javaType="cn.vuffy.o2o.entity.PersonInfo">
+            <id column="user_id" property="userId"/>
+            <result column="name" property="userName"/>
+        </association>
+        <association property="award" column="award_id" javaType="cn.vuffy.o2o.entity.Award">
+            <id column="award_id" property="awardId"/>
+            <result column="award_name" property="awardName"/>
+        </association>
+        <association property="shop" column="shop_id" javaType="cn.vuffy.o2o.entity.Shop">
+            <id column="shop_id" property="shopId"/>
+            <result column="shop_name" property="shopName"/>
+        </association>
+        <association property="operator" column="operator_id" javaType="cn.vuffy.o2o.entity.PersonInfo">
+            <id column="operator_id" property="userId"/>
+            <result column="operator_name" property="userName"/>
+        </association>
+    </resultMap>
+    <select id="queryUserAwardMapList" resultType="cn.vuffy.o2o.entity.UserAwardMap">
+        SELECT uam.user_award_id,
+        uam.create_time,
+        uam.used_status,
+        uam.point,
+        buyer.user_id,
+        buyer.name,
+        s.shop_id,
+        s.shop_name,
+        a.award_id,
+        a.award_name,
+        operator.user_id AS operator_id,
+        operator.name AS operator_name
+        FROM tb_user_award_map uam,
+        tb_person_info buyer,
+        tb_shop s,
+        tb_award a,
+        tb_person_info operator
+        <where>
+            uam.user_id = buyer.user_id AND uam.user_id = s.user_id
+
+        </where>
+    </select>
 
 
 </mapper>
