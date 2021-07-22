@@ -38,7 +38,7 @@ public interface UserAwardMapDao {
      * @param userAwardCondition
      * @return
      */
-    int queryAwardCondition(@Param("userAwardCondition") UserAwardMap userAwardCondition);
+    int queryUserAwardMapCount(@Param("userAwardCondition") UserAwardMap userAwardCondition);
 
     /**
      * 根据 userAwardId 返回某奖品的兑换信息
