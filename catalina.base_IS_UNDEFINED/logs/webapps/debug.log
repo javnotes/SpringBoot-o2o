@@ -334,3 +334,4 @@
 2021-07-22 07:45:08.604 [http-nio-8080-exec-3] DEBUG cn.vuffy.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.enable_status = ? AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id
 2021-07-22 07:45:08.605 [http-nio-8080-exec-3] DEBUG cn.vuffy.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Integer)
 2021-07-22 07:45:08.607 [http-nio-8080-exec-3] DEBUG cn.vuffy.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2021-07-22 09:00:03.954 [main] DEBUG cn.vuffy.o2o.O2oApplication - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE

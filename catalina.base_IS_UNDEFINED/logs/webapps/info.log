@@ -22,3 +22,6 @@
 2021-07-22 07:42:49.152 [main] INFO  cn.vuffy.o2o.O2oApplication - Starting O2oApplication on MacBook-Pro.local with PID 67173 (/Users/liliansong/IdeaProjects/SpringBoot/o2o/target/classes started by liliansong in /Users/liliansong/IdeaProjects/SpringBoot/o2o)
 2021-07-22 07:42:49.156 [main] INFO  cn.vuffy.o2o.O2oApplication - No active profile set, falling back to default profiles: default
 2021-07-22 07:42:51.073 [main] INFO  cn.vuffy.o2o.O2oApplication - Started O2oApplication in 2.276 seconds (JVM running for 3.154)
+2021-07-22 09:00:03.951 [main] INFO  cn.vuffy.o2o.O2oApplication - Starting O2oApplication on chinalife with PID 12440 (C:\Users\chinalife\Desktop\SpringBoot-o2o\target\classes started by chinalife in C:\Users\chinalife\Desktop\SpringBoot-o2o)
+2021-07-22 09:00:03.955 [main] INFO  cn.vuffy.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2021-07-22 09:00:06.627 [main] INFO  cn.vuffy.o2o.O2oApplication - Started O2oApplication in 3.029 seconds (JVM running for 3.976)
