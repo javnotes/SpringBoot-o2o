@@ -11,7 +11,7 @@
         <result column="point" property="point"/>
         <association property="user" column="user_id" javaType="cn.vuffy.o2o.entity.PersonInfo">
             <id column="user_id" property="userId"/>
-            <result column="name" property="userName"/>
+            <result column="user_name" property="userName"/>
         </association>
         <association property="award" column="award_id" javaType="cn.vuffy.o2o.entity.Award">
             <id column="award_id" property="awardId"/>
@@ -32,7 +32,7 @@
         uam.used_status,
         uam.point,
         buyer.user_id,
-        buyer.name,
+        buyer.user_name,
         s.shop_id,
         s.shop_name,
         a.award_id,
@@ -54,8 +54,8 @@
                 and uam.shop_id = #{userAwardCondition.shop.shopId}
             </if>
             <!-- 根据顾客名字查询 -->
-            <if test="userAwardCondition.user != null and userAwardCondition.user.name != null">
-                and buyer.name like '%${userAwardCondition.user.name}%'
+            <if test="userAwardCondition.user != null and userAwardCondition.user.userName != null">
+                and buyer.user_name like '%${userAwardCondition.user.userName}%'
             </if>
             <!-- 根据奖品名查询 -->
             <if test="userAwardCondition.award != null and userAwardCondition.award.awardName != null">
@@ -74,13 +74,13 @@
         uam.used_status,
         uam.point,
         buyer.user_id,
-        buyer.name,
+        buyer.user_name,
         s.shop_id,
         s.shop_name,
         a.award_id,
         a.award_name,
         operator.user_id AS operator_id,
-        operator.name AS operator_name
+        operator.user_name AS operator_name
         FROM tb_user_award_map uam,
         tb_person_info buyer,
         tb_shop s,
@@ -113,8 +113,8 @@
                 and uam.shop_id = #{userAwardCondition.shop.shopId}
             </if>
             <!-- 根据顾客名字查询 -->
-            <if test="userAwardCondition.user != null and userAwardCondition.user.name != null">
-                and buyer.name like '%${userAwardCondition.user.name}%'
+            <if test="userAwardCondition.user != null and userAwardCondition.user.userName != null">
+                and buyer.user_name like '%${userAwardCondition.user.userName}%'
             </if>
             <!-- 根据奖品名查询 -->
             <if test="userAwardCondition.award != null and userAwardCondition.award.awardName != null">
@@ -132,7 +132,7 @@
                uam.used_status,
                uam.point,
                buyer.user_id,
-               buyer.name,
+               buyer.user_name,
                s.shop_id,
                s.shop_name,
                a.award_id,
