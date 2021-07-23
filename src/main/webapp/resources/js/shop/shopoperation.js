@@ -1,6 +1,5 @@
 // $(function () {} 为初始化函数
 $(function () {
-
     // 传入shopId，则更新这个店铺，否则是新增
     var shopId = getQueryString('shopId');
     var isEdit = shopId ? true : false;
@@ -11,11 +10,12 @@ $(function () {
     var shopInfoUrl = '/o2o/shopadmin/getshopbyid?shopId=' + shopId;
     var editShopUrl = '/o2o/shopadmin/modifyshop';
 
-    if (isEdit) {
-        getShopInfo(shopId);
-    } else {
-        // 加载到这时，调用方法 getShopInitInfo
+    // 判断是编辑操作还是注册操作
+    if (!isEdit) {
+        // 加载到这时，调用方法 getShopInitInfo()
         getShopInitInfo();
+    } else {
+        getShopInfo(shopId);
     }
 
     // 方法3：通过店铺Id获取店铺信息
@@ -132,15 +132,19 @@ $(function () {
             success: function (data) {
                 if (data.success) {
                     $.toast('提交成功～');
+                    if (!isEdit) {
+                        // 若为注册操作，成功后返回店铺列表页
+                        window.location.href = "/o2o/shopadmin/shoplist";
+                    }
                 } else {
                     $.toast('提交失败 ' + data.errorMessage);
                 }
                 // alert(data);
                 $('#kaptcha_img').click();
-            },
+            }
         });
     });
-})
+});
 // 初始化 调用
 // js 文件被加载时，就调用 js 中的方法
 // html 中要引入 js 文件
