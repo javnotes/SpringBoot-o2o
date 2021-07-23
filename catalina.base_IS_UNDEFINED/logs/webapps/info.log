@@ -25,3 +25,12 @@
 2021-07-23 14:24:57.144 [main] INFO  cn.vuffy.o2o.O2oApplication - Starting O2oApplication on chinalife with PID 12684 (C:\Users\chinalife\Desktop\SpringBoot-o2o\target\classes started by chinalife in C:\Users\chinalife\Desktop\SpringBoot-o2o)
 2021-07-23 14:24:57.150 [main] INFO  cn.vuffy.o2o.O2oApplication - No active profile set, falling back to default profiles: default
 2021-07-23 14:25:00.894 [main] INFO  cn.vuffy.o2o.O2oApplication - Started O2oApplication in 4.452 seconds (JVM running for 6.255)
+2021-07-23 14:33:12.966 [main] INFO  cn.vuffy.o2o.O2oApplication - Starting O2oApplication on chinalife with PID 42624 (C:\Users\chinalife\Desktop\SpringBoot-o2o\target\classes started by chinalife in C:\Users\chinalife\Desktop\SpringBoot-o2o)
+2021-07-23 14:33:12.971 [main] INFO  cn.vuffy.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2021-07-23 14:33:16.147 [main] INFO  cn.vuffy.o2o.O2oApplication - Started O2oApplication in 3.736 seconds (JVM running for 5.276)
+2021-07-23 14:35:55.659 [main] INFO  cn.vuffy.o2o.O2oApplication - Starting O2oApplication on chinalife with PID 12876 (C:\Users\chinalife\Desktop\SpringBoot-o2o\target\classes started by chinalife in C:\Users\chinalife\Desktop\SpringBoot-o2o)
+2021-07-23 14:35:55.666 [main] INFO  cn.vuffy.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2021-07-23 14:35:59.557 [main] INFO  cn.vuffy.o2o.O2oApplication - Started O2oApplication in 4.457 seconds (JVM running for 6.061)
+2021-07-23 14:39:17.179 [main] INFO  cn.vuffy.o2o.O2oApplication - Starting O2oApplication on chinalife with PID 41176 (C:\Users\chinalife\Desktop\SpringBoot-o2o\target\classes started by chinalife in C:\Users\chinalife\Desktop\SpringBoot-o2o)
+2021-07-23 14:39:17.184 [main] INFO  cn.vuffy.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2021-07-23 14:39:20.493 [main] INFO  cn.vuffy.o2o.O2oApplication - Started O2oApplication in 3.749 seconds (JVM running for 7.323)

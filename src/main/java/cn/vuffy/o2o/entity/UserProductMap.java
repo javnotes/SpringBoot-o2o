@@ -3,7 +3,7 @@ package cn.vuffy.o2o.entity;
 import java.util.Date;
 
 /**
- * 顾客消费的商品
+ * 顾客与其所消费的商品的映射
  */
 public class UserProductMap {
     // 主键Id
