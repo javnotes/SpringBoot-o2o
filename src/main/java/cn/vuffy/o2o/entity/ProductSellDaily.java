@@ -6,14 +6,24 @@ import java.util.Date;
  * 某店铺某商品的销售量，相当也是顾客消费记录
  */
 public class ProductSellDaily {
+    // 主键Id
+    private Long productSellDailyId;
     // 哪天的销量，精确到天
     private Date createTime;
     // 销量
     private Integer total;
     // 商品信息实体类
-    private cn.vuffy.o2o.entity.Product product;
+    private Product product;
     // 店铺信息实体类
-    private cn.vuffy.o2o.entity.Shop shop;
+    private Shop shop;
+
+    public Long getProductSellDailyId() {
+        return productSellDailyId;
+    }
+
+    public void setProductSellDailyId(Long productSellDailyId) {
+        this.productSellDailyId = productSellDailyId;
+    }
 
     public Date getCreateTime() {
         return createTime;
@@ -31,19 +41,19 @@ public class ProductSellDaily {
         this.total = total;
     }
 
-    public cn.vuffy.o2o.entity.Product getProduct() {
+    public Product getProduct() {
         return product;
     }
 
-    public void setProduct(cn.vuffy.o2o.entity.Product product) {
+    public void setProduct(Product product) {
         this.product = product;
     }
 
-    public cn.vuffy.o2o.entity.Shop getShop() {
+    public Shop getShop() {
         return shop;
     }
 
-    public void setShop(cn.vuffy.o2o.entity.Shop shop) {
+    public void setShop(Shop shop) {
         this.shop = shop;
     }
 }
