@@ -3,7 +3,7 @@ package cn.vuffy.o2o.entity;
 import java.util.Date;
 
 /**
- * 顾客店铺积分映射，即顾客在某店铺下的积分和
+ * 顾客店铺积分映射，即顾客在某店铺下的积分之和
  */
 public class UserShopMap {
     // 主键Id

@@ -14,7 +14,6 @@ import java.util.List;
  * @create 2021-07-13 15:28
  */
 public class ShopPermissionInterceptor extends HandlerInterceptorAdapter {
-
     /**
      * 主要做事前拦截，即用户操作发生前，改写preHandle里的逻辑，进行用户操作权限的拦截
      *
