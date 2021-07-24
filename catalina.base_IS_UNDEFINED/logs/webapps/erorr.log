@@ -1,6 +1,0 @@
-2021-07-22 07:01:47.320 [http-nio-8080-exec-1] ERROR cn.vuffy.o2o.util.ImageUtil - javax.imageio.IIOException: Can't read input file!
-2021-07-22 07:02:15.779 [http-nio-8080-exec-3] ERROR cn.vuffy.o2o.util.ImageUtil - javax.imageio.IIOException: Can't read input file!
-2021-07-22 07:07:29.321 [http-nio-8080-exec-10] ERROR cn.vuffy.o2o.util.ImageUtil - javax.imageio.IIOException: Can't read input file!
-2021-07-22 07:32:30.759 [http-nio-8080-exec-7] ERROR cn.vuffy.o2o.util.ImageUtil - java.io.FileNotFoundException: /Users/liliansong/Documents/image/upload/images/upload/images/item/shop/27/2021072207182792249.jpeg (No such file or directory)
-2021-07-22 07:33:16.836 [http-nio-8080-exec-7] ERROR cn.vuffy.o2o.util.ImageUtil - javax.imageio.IIOException: Can't read input file!
-2021-07-22 07:42:46.463 [http-nio-8080-exec-9] ERROR cn.vuffy.o2o.util.ImageUtil - javax.imageio.IIOException: Can't read input file!
