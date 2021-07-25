@@ -132,10 +132,7 @@ $(function () {
             success: function (data) {
                 if (data.success) {
                     $.toast('提交成功～');
-                    if (!isEdit) {
-                        // 若为注册操作，成功后返回店铺列表页
-                        window.location.href = "/o2o/shopadmin/shoplist";
-                    }
+                    window.location.href = "/o2o/shopadmin/shoplist";
                 } else {
                     $.toast('提交失败 ' + data.errorMessage);
                 }
@@ -144,7 +141,7 @@ $(function () {
             }
         });
     });
-});
+})
 // 初始化 调用
 // js 文件被加载时，就调用 js 中的方法
 // html 中要引入 js 文件

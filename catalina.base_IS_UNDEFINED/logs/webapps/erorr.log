@@ -1,0 +1,8 @@
+2021-07-25 17:55:55.491 [main] ERROR cn.vuffy.o2o.service.impl.WechatAuthServiceImpl - InsertWechatAuth error:org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'fkkfhdk' for key 'open_id'
+### The error may exist in file [/Users/liliansong/IdeaProjects/SpringBoot/o2o/target/classes/mapper/WechatAuthDao.xml]
+### The error may involve cn.vuffy.o2o.dao.WechatAuthDao.insertWechatAuth-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO tb_wechat_auth(user_id, open_id, create_time)         VALUES (?, ?, ?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'fkkfhdk' for key 'open_id'
+; Duplicate entry 'fkkfhdk' for key 'open_id'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'fkkfhdk' for key 'open_id'
