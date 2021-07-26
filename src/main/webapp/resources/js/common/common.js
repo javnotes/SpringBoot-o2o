@@ -44,5 +44,5 @@ function getQueryString(name) {
  * 获取项目的 ContextPath 以便修正图片路由让其正常显示
  */
 function getContextPath() {
-    return "/o2o/";
+    return "/o2o";
 }
