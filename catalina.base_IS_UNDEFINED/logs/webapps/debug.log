@@ -713,3 +713,4 @@
 2021-07-26 15:13:24.692 [http-nio-8080-exec-10] DEBUG c.v.o.d.P.queryProductCategoryList - ==>  Preparing: -- 具体的 sal SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC
 2021-07-26 15:13:24.692 [http-nio-8080-exec-10] DEBUG c.v.o.d.P.queryProductCategoryList - ==> Parameters: 42(Long)
 2021-07-26 15:13:24.693 [http-nio-8080-exec-10] DEBUG c.v.o.d.P.queryProductCategoryList - <==      Total: 0
+2021-07-26 16:03:52.399 [main] DEBUG cn.vuffy.o2o.O2oApplication - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
