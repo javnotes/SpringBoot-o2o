@@ -22,3 +22,15 @@
 2021-07-26 09:57:42.093 [main] INFO  cn.vuffy.o2o.O2oApplication - Starting O2oApplication on chinalife with PID 22836 (C:\Users\chinalife\Desktop\SpringBoot-o2o\target\classes started by chinalife in C:\Users\chinalife\Desktop\SpringBoot-o2o)
 2021-07-26 09:57:42.100 [main] INFO  cn.vuffy.o2o.O2oApplication - No active profile set, falling back to default profiles: default
 2021-07-26 09:57:45.419 [main] INFO  cn.vuffy.o2o.O2oApplication - Started O2oApplication in 3.847 seconds (JVM running for 5.377)
+2021-07-26 11:17:11.178 [main] INFO  cn.vuffy.o2o.O2oApplication - Starting O2oApplication on chinalife with PID 29556 (C:\Users\chinalife\Desktop\SpringBoot-o2o\target\classes started by chinalife in C:\Users\chinalife\Desktop\SpringBoot-o2o)
+2021-07-26 11:17:11.184 [main] INFO  cn.vuffy.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2021-07-26 11:17:14.230 [main] INFO  cn.vuffy.o2o.O2oApplication - Started O2oApplication in 3.512 seconds (JVM running for 4.726)
+2021-07-26 11:17:52.795 [main] INFO  cn.vuffy.o2o.O2oApplication - Starting O2oApplication on chinalife with PID 36272 (C:\Users\chinalife\Desktop\SpringBoot-o2o\target\classes started by chinalife in C:\Users\chinalife\Desktop\SpringBoot-o2o)
+2021-07-26 11:17:52.799 [main] INFO  cn.vuffy.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2021-07-26 11:17:56.102 [main] INFO  cn.vuffy.o2o.O2oApplication - Started O2oApplication in 3.76 seconds (JVM running for 5.091)
+2021-07-26 11:19:51.064 [main] INFO  cn.vuffy.o2o.O2oApplication - Starting O2oApplication on chinalife with PID 19392 (C:\Users\chinalife\Desktop\SpringBoot-o2o\target\classes started by chinalife in C:\Users\chinalife\Desktop\SpringBoot-o2o)
+2021-07-26 11:19:51.067 [main] INFO  cn.vuffy.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2021-07-26 11:19:53.888 [main] INFO  cn.vuffy.o2o.O2oApplication - Started O2oApplication in 3.169 seconds (JVM running for 4.205)
+2021-07-26 11:22:14.233 [main] INFO  cn.vuffy.o2o.O2oApplication - Starting O2oApplication on chinalife with PID 42280 (C:\Users\chinalife\Desktop\SpringBoot-o2o\target\classes started by chinalife in C:\Users\chinalife\Desktop\SpringBoot-o2o)
+2021-07-26 11:22:14.237 [main] INFO  cn.vuffy.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2021-07-26 11:22:17.370 [main] INFO  cn.vuffy.o2o.O2oApplication - Started O2oApplication in 3.594 seconds (JVM running for 4.742)
