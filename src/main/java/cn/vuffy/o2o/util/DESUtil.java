@@ -99,6 +99,9 @@ public class DESUtil {
 
         System.out.println(getEncryptString("vuffy"));
         System.out.println(getEncryptString("Mysql.688"));
+
+        System.out.println(System.getProperty("os.name"));
+
     }
 
 }
