@@ -42,7 +42,11 @@ public class MvcConfiguration implements WebMvcConfigurer, ApplicationContextAwa
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
 //        registry.addResourceHandler("/resources/**").addResourceLocations("classpath:/resources/");
         // Linux:
+<<<<<<< HEAD
 //        registry.addResourceHandler("/upload/**").addResourceLocations("file:/home/o2o/image/");
+=======
+        registry.addResourceHandler("/upload/**").addResourceLocations("file:/home/o2o/image/upload/");
+>>>>>>> 1297ec96f67bc3af7ccc925a98b671f9642f3ab8
         // Mac:
 //        registry.addResourceHandler("/upload/**").addResourceLocations("file:/Users/liliansong/Documents/image/upload/");
         // Windows:
