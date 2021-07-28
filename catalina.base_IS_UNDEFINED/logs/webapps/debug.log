@@ -52,3 +52,19 @@
 2021-07-29 07:12:40.259 [main] DEBUG cn.vuffy.o2o.dao.AwardDao.queryAwardByAwardId - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award WHERE award_id = ?
 2021-07-29 07:12:40.260 [main] DEBUG cn.vuffy.o2o.dao.AwardDao.queryAwardByAwardId - ==> Parameters: 17(Long)
 2021-07-29 07:12:40.261 [main] DEBUG cn.vuffy.o2o.dao.AwardDao.queryAwardByAwardId - <==      Total: 1
+2021-07-29 07:14:39.062 [main] DEBUG cn.vuffy.o2o.dao.AwardDaoTest - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-07-29 07:14:42.378 [main] DEBUG cn.vuffy.o2o.dao.AwardDao.queryAwardList - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award WHERE award_name like '%测试%' ORDER BY priority DESC LIMIT ?, ?;
+2021-07-29 07:14:42.419 [main] DEBUG cn.vuffy.o2o.dao.AwardDao.queryAwardList - ==> Parameters: 0(Integer), 2(Integer)
+2021-07-29 07:14:42.452 [main] DEBUG cn.vuffy.o2o.dao.AwardDao.queryAwardList - <==      Total: 2
+2021-07-29 07:14:42.459 [main] DEBUG cn.vuffy.o2o.dao.AwardDao.deleteAward - ==>  Preparing: DELETE FROM tb_award WHERE award_id = ? AND shop_id = ?}
+2021-07-29 07:14:42.459 [main] DEBUG cn.vuffy.o2o.dao.AwardDao.deleteAward - ==> Parameters: 18(Long), 27(Long)
+2021-07-29 07:17:26.431 [main] DEBUG cn.vuffy.o2o.dao.AwardDaoTest - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2021-07-29 07:17:30.069 [main] DEBUG cn.vuffy.o2o.dao.AwardDao.queryAwardList - ==>  Preparing: SELECT award_id, award_name, award_desc, award_img, point, priority, create_time, last_edit_time, enable_status, shop_id FROM tb_award WHERE award_name like '%测试%' ORDER BY priority DESC LIMIT ?, ?;
+2021-07-29 07:17:30.113 [main] DEBUG cn.vuffy.o2o.dao.AwardDao.queryAwardList - ==> Parameters: 0(Integer), 2(Integer)
+2021-07-29 07:17:30.185 [main] DEBUG cn.vuffy.o2o.dao.AwardDao.queryAwardList - <==      Total: 2
+2021-07-29 07:17:30.193 [main] DEBUG cn.vuffy.o2o.dao.AwardDao.deleteAward - ==>  Preparing: DELETE FROM tb_award WHERE award_id = ? AND shop_id = ?
+2021-07-29 07:17:30.194 [main] DEBUG cn.vuffy.o2o.dao.AwardDao.deleteAward - ==> Parameters: 18(Long), 27(Long)
+2021-07-29 07:17:30.197 [main] DEBUG cn.vuffy.o2o.dao.AwardDao.deleteAward - <==    Updates: 1
+2021-07-29 07:17:30.198 [main] DEBUG cn.vuffy.o2o.dao.AwardDao.deleteAward - ==>  Preparing: DELETE FROM tb_award WHERE award_id = ? AND shop_id = ?
+2021-07-29 07:17:30.198 [main] DEBUG cn.vuffy.o2o.dao.AwardDao.deleteAward - ==> Parameters: 17(Long), 27(Long)
+2021-07-29 07:17:30.200 [main] DEBUG cn.vuffy.o2o.dao.AwardDao.deleteAward - <==    Updates: 1

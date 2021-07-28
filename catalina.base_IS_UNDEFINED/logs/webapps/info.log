@@ -25,3 +25,9 @@
 2021-07-29 07:12:36.832 [main] INFO  cn.vuffy.o2o.dao.AwardDaoTest - Starting AwardDaoTest on MacBook-Pro.local with PID 19979 (started by liliansong in /Users/liliansong/IdeaProjects/SpringBoot/o2o)
 2021-07-29 07:12:36.833 [main] INFO  cn.vuffy.o2o.dao.AwardDaoTest - No active profile set, falling back to default profiles: default
 2021-07-29 07:12:39.572 [main] INFO  cn.vuffy.o2o.dao.AwardDaoTest - Started AwardDaoTest in 3.119 seconds (JVM running for 3.983)
+2021-07-29 07:14:39.062 [main] INFO  cn.vuffy.o2o.dao.AwardDaoTest - Starting AwardDaoTest on MacBook-Pro.local with PID 20240 (started by liliansong in /Users/liliansong/IdeaProjects/SpringBoot/o2o)
+2021-07-29 07:14:39.063 [main] INFO  cn.vuffy.o2o.dao.AwardDaoTest - No active profile set, falling back to default profiles: default
+2021-07-29 07:14:41.805 [main] INFO  cn.vuffy.o2o.dao.AwardDaoTest - Started AwardDaoTest in 3.04 seconds (JVM running for 3.975)
+2021-07-29 07:17:26.430 [main] INFO  cn.vuffy.o2o.dao.AwardDaoTest - Starting AwardDaoTest on MacBook-Pro.local with PID 20375 (started by liliansong in /Users/liliansong/IdeaProjects/SpringBoot/o2o)
+2021-07-29 07:17:26.431 [main] INFO  cn.vuffy.o2o.dao.AwardDaoTest - No active profile set, falling back to default profiles: default
+2021-07-29 07:17:29.443 [main] INFO  cn.vuffy.o2o.dao.AwardDaoTest - Started AwardDaoTest in 3.328 seconds (JVM running for 4.197)
