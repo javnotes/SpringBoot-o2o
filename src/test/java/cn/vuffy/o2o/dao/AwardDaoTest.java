@@ -1,6 +1,5 @@
 package cn.vuffy.o2o.dao;
 
-import cn.vuffy.o2o.entity.Area;
 import cn.vuffy.o2o.entity.Award;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -28,7 +27,7 @@ public class AwardDaoTest {
     @Test
     public void testAInsertAward() throws Exception {
         // 店铺id=1 下的奖品
-        long shopId = 1;
+        long shopId = 27;
 
         // 创建奖品一
         Award award1 = new Award();
@@ -65,11 +64,14 @@ public class AwardDaoTest {
         Award award = new Award();
         List<Award> awardList = awardDao.queryAwardList(award, 0, 3);
         assertEquals(3, awardList.size());
+
         int count = awardDao.queryAwardCount(award);
         assertEquals(4, count);
+
         award.setAwardName("测试");
         awardList = awardDao.queryAwardList(award, 0, 3);
         assertEquals(2, awardList.size());
+
         count = awardDao.queryAwardCount(award);
         assertEquals(2, count);
     }
@@ -82,13 +84,14 @@ public class AwardDaoTest {
     @Test
     public void testCQueryAwardByAwardId() throws Exception {
         Award awardCondition = new Award();
-        awardCondition.setAwardName("测试一");
+        awardCondition.setAwardName("奖品一");
         // 按照特定名字查询返回特定的奖品
         List<Award> awardList = awardDao.queryAwardList(awardCondition, 0, 1);
         assertEquals(1, awardList.size());
+
         // 通过特定名字查询返回的特定奖品的Id去测试方法
         Award award = awardDao.queryAwardByAwardId(awardList.get(0).getAwardId());
-        assertEquals("测试一", award.getAwardName());
+        assertEquals("测试奖品一", award.getAwardName());
     }
 
     /**
@@ -99,7 +102,7 @@ public class AwardDaoTest {
     @Test
     public void testDUpdateAward() throws Exception {
         Award awardCondition = new Award();
-        awardCondition.setAwardName("测试一");
+        awardCondition.setAwardName("奖品一");
         // 按照特定名字查询返回特定的奖品
         List<Award> awardList = awardDao.queryAwardList(awardCondition, 0, 1);
         // 修改该商品的名称
