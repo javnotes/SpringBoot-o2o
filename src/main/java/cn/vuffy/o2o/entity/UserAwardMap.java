@@ -87,4 +87,18 @@ public class UserAwardMap {
     public void setOperator(cn.vuffy.o2o.entity.PersonInfo operator) {
         this.operator = operator;
     }
+
+    @Override
+    public String toString() {
+        return "UserAwardMap{" +
+                "userAwardId=" + userAwardId +
+                ", createTime=" + createTime +
+                ", usedStatus=" + usedStatus +
+                ", point=" + point +
+                ", user=" + user +
+                ", award=" + award +
+                ", shop=" + shop +
+                ", operator=" + operator +
+                '}';
+    }
 }
