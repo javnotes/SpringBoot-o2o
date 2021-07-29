@@ -126,7 +126,7 @@
             </if>
         </where>
     </select>
-    <select id="queryUserAwardMapById" resultType="cn.vuffy.o2o.entity.UserAwardMap">
+    <select id="queryUserAwardMapById" resultMap="userAwardResultMap">
         SELECT uam.user_award_id,
                uam.create_time,
                uam.used_status,

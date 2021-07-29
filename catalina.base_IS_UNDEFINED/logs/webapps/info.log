@@ -19,3 +19,6 @@
 2021-07-30 06:17:25.656 [main] INFO  cn.vuffy.o2o.dao.UserAwardMapDaoTest - Starting UserAwardMapDaoTest on MacBook-Pro.local with PID 32661 (started by liliansong in /Users/liliansong/IdeaProjects/SpringBoot/o2o)
 2021-07-30 06:17:25.657 [main] INFO  cn.vuffy.o2o.dao.UserAwardMapDaoTest - No active profile set, falling back to default profiles: default
 2021-07-30 06:17:28.430 [main] INFO  cn.vuffy.o2o.dao.UserAwardMapDaoTest - Started UserAwardMapDaoTest in 3.177 seconds (JVM running for 4.315)
+2021-07-30 07:39:12.786 [main] INFO  cn.vuffy.o2o.dao.UserAwardMapDaoTest - Starting UserAwardMapDaoTest on MacBook-Pro.local with PID 3066 (started by liliansong in /Users/liliansong/IdeaProjects/SpringBoot/o2o)
+2021-07-30 07:39:12.788 [main] INFO  cn.vuffy.o2o.dao.UserAwardMapDaoTest - No active profile set, falling back to default profiles: default
+2021-07-30 07:39:16.414 [main] INFO  cn.vuffy.o2o.dao.UserAwardMapDaoTest - Started UserAwardMapDaoTest in 4.196 seconds (JVM running for 5.591)
