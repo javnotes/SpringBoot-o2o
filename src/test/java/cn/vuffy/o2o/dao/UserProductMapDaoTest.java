@@ -12,7 +12,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Date;
 import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 
 @SpringBootTest
@@ -97,18 +96,21 @@ public class UserProductMapDaoTest {
         PersonInfo customer = new PersonInfo();
         // 按顾客名字模糊查询
         customer.setUserName("测试");
+        //customer.setUserName("用户5");
         userProductMap.setUser(customer);
         List<UserProductMap> userProductMapList = userProductMapDao.queryUserProductMapList(userProductMap, 0, 2);
         assertEquals(2, userProductMapList.size());
+
         int count = userProductMapDao.queryUserProductMapCount(userProductMap);
-        assertEquals(4, count);
+        assertEquals(5, count);
+
         // 叠加店铺去查询
         Shop shop = new Shop();
-        shop.setShopId(29L);
+        shop.setShopId(27L);
         userProductMap.setShop(shop);
         userProductMapList = userProductMapDao.queryUserProductMapList(userProductMap, 0, 3);
         assertEquals(3, userProductMapList.size());
         count = userProductMapDao.queryUserProductMapCount(userProductMap);
-        assertEquals(3, count);
+        assertEquals(4, count);
     }
 }

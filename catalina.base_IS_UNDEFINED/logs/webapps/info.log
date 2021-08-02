@@ -7,3 +7,9 @@
 2021-08-02 22:19:30.572 [main] INFO  cn.vuffy.o2o.dao.UserProductMapDaoTest - Starting UserProductMapDaoTest on liliansongdeMacBook-Pro.local with PID 7426 (started by vuffy in /Users/vuffy/IdeaProjects/SpringBoot-o2o)
 2021-08-02 22:19:30.573 [main] INFO  cn.vuffy.o2o.dao.UserProductMapDaoTest - No active profile set, falling back to default profiles: default
 2021-08-02 22:19:35.071 [main] INFO  cn.vuffy.o2o.dao.UserProductMapDaoTest - Started UserProductMapDaoTest in 4.874 seconds (JVM running for 6.639)
+2021-08-02 22:27:39.047 [main] INFO  cn.vuffy.o2o.dao.UserProductMapDaoTest - Starting UserProductMapDaoTest on liliansongdeMacBook-Pro.local with PID 8023 (started by vuffy in /Users/vuffy/IdeaProjects/SpringBoot-o2o)
+2021-08-02 22:27:39.049 [main] INFO  cn.vuffy.o2o.dao.UserProductMapDaoTest - No active profile set, falling back to default profiles: default
+2021-08-02 22:27:42.263 [main] INFO  cn.vuffy.o2o.dao.UserProductMapDaoTest - Started UserProductMapDaoTest in 3.72 seconds (JVM running for 4.911)
+2021-08-02 22:28:35.636 [main] INFO  cn.vuffy.o2o.dao.UserProductMapDaoTest - Starting UserProductMapDaoTest on liliansongdeMacBook-Pro.local with PID 8070 (started by vuffy in /Users/vuffy/IdeaProjects/SpringBoot-o2o)
+2021-08-02 22:28:35.637 [main] INFO  cn.vuffy.o2o.dao.UserProductMapDaoTest - No active profile set, falling back to default profiles: default
+2021-08-02 22:28:38.814 [main] INFO  cn.vuffy.o2o.dao.UserProductMapDaoTest - Started UserProductMapDaoTest in 3.468 seconds (JVM running for 4.532)

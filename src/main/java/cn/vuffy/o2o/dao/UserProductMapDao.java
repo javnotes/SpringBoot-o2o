@@ -29,7 +29,7 @@ public interface UserProductMapDao {
      * @param userProductCondition
      * @return
      */
-    int queryUserProductMapCount(@Param("userProductConditionf") UserProductMap userProductCondition);
+    int queryUserProductMapCount(@Param("userProductCondition") UserProductMap userProductCondition);
 
     /**
      * 添加一条用户购买商品的记录信息
