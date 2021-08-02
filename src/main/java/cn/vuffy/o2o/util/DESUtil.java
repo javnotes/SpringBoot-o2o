@@ -1,12 +1,12 @@
 package cn.vuffy.o2o.util;
 
-import sun.misc.BASE64Decoder;
-import sun.misc.BASE64Encoder;
-
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import java.security.Key;
 import java.security.SecureRandom;
+import java.util.Base64;
+import java.util.Base64.Decoder;
+import java.util.Base64.Encoder;
 
 /**
  * DES是一种对称加密算法，所谓对称加密算法即：加密和解密使用相同密钥的算法。
@@ -47,7 +47,7 @@ public class DESUtil {
      */
     public static String getEncryptString(String str) {
         // 基于BASE64编码，接收byte[]并转换成String
-        BASE64Encoder base64encoder = new BASE64Encoder();
+        Encoder encoder = Base64.getEncoder();
         try {
             // 按UTF8编码
             byte[] bytes = str.getBytes(CHARSETNAME);
@@ -58,7 +58,7 @@ public class DESUtil {
             // 加密
             byte[] doFinal = cipher.doFinal(bytes);
             // byte[]to encode好的String并返回
-            return base64encoder.encode(doFinal);
+            return encoder.encodeToString(doFinal);
         } catch (Exception e) {
             // TODO: handle exception
             throw new RuntimeException(e);
@@ -73,10 +73,13 @@ public class DESUtil {
      */
     public static String getDecryptString(String str) {
         // 基于BASE64编码，接收byte[]并转换成String
-        BASE64Decoder base64decoder = new BASE64Decoder();
+        // BASE64Decoder base64decoder = new BASE64Decoder();
+
+        Decoder decoder = Base64.getDecoder();
         try {
             // 将字符串decode成byte[]
-            byte[] bytes = base64decoder.decodeBuffer(str);
+            // byte[] bytes = base64decoder.decodeBuffer(str);
+            byte[] bytes = decoder.decode(str);
             // 获取解密对象
             Cipher cipher = Cipher.getInstance(ALGORITHM);
             // 初始化解密信息
@@ -93,7 +96,7 @@ public class DESUtil {
 
     public static void main(String[] args) {
         System.out.println(getEncryptString("root"));
-        System.out.println(getEncryptString("chinalife"));
+        System.out.println(getEncryptString("vuffy.688"));
         System.out.println();
 
 
