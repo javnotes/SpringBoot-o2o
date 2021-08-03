@@ -10,6 +10,8 @@ public class PathUtil {
 
     private static String winPath;
 
+    private static String macPath;
+
     private static String linuxPath;
 
     private static String shopPath;
@@ -21,6 +23,11 @@ public class PathUtil {
     @Value("${win.base.path}")
     public void setWinPath(String winPath) {
         PathUtil.winPath = winPath;
+    }
+
+    @Value("${mac.base.path}")
+    public void setMacPath(String macPath) {
+        PathUtil.macPath = macPath;
     }
 
     @Value("${linux.base.path}")
@@ -49,11 +56,12 @@ public class PathUtil {
 
         if (os.toLowerCase().startsWith("win")) {
             bathPath = winPath;
+        } else if (os.toLowerCase().startsWith("mac")) {
+            bathPath = macPath;
         } else {
-            // Linux 路径
+            // Linux 路径，在阿里云中，需先创建该路径
+            // bathPath = "/home/o2o/image"
             bathPath = linuxPath;
-//             在阿里云中，需先创建该路径
-//            bathPath = "/home/o2o/image";
         }
         bathPath = bathPath.replace("/", seperator);
         return bathPath;

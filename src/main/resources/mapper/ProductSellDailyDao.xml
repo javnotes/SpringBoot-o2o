@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- 命名空间 -->
 <mapper namespace="cn.vuffy.o2o.dao.ProductSellDailyDao">
-    <resultMap id="productSellDailyResultMap " type="cn.vuffy.o2o.entity.ProductSellDaily">
+    <resultMap id="productSellDailyResultMap" type="cn.vuffy.o2o.entity.ProductSellDaily">
         <id column="product_sell_daily_id" property="productSellDailyId"/>
         <result column="create_time" property="createTime"/>
         <result column="total" property="total"/>
@@ -17,7 +17,7 @@
             <result column="shop_name" property="shopName"/>
         </association>
     </resultMap>
-    <select id="queryProductSellDailyList" resultType="cn.vuffy.o2o.entity.ProductSellDaily">
+    <select id="queryProductSellDailyList" resultMap="productSellDailyResultMap">
         SELECT psd.product_sell_daily_id,
         psd.create_time,
         psd.total,

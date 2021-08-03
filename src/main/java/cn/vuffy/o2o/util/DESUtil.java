@@ -95,16 +95,10 @@ public class DESUtil {
     }
 
     public static void main(String[] args) {
-        System.out.println(getEncryptString("root"));
-        System.out.println(getEncryptString("vuffy.688"));
-        System.out.println();
+        String os = System.getProperty("os.name");
 
-
-        System.out.println(getEncryptString("vuffy"));
-        System.out.println(getEncryptString("Mysql.688"));
-
-        System.out.println(System.getProperty("os.name"));
-
+        if (os.toLowerCase().startsWith("mac")) {
+            System.out.println("++");
+        }
     }
-
 }
