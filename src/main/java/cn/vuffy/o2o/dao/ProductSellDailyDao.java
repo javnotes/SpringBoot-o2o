@@ -29,4 +29,11 @@ public interface ProductSellDailyDao {
      * @return
      */
     int insertProductSellDaily();
+
+    /**
+     * 统计平台当天没销量的商品，补全信息，将他们的销量置为0
+     *
+     * @return
+     */
+    int insertDefaultProductSellDaily();
 }

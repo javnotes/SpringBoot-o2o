@@ -1,3 +1,15 @@
 2021-08-03 09:20:53.501 [main] INFO  cn.vuffy.o2o.dao.UserProductMapDaoTest - Starting UserProductMapDaoTest on liliansongdeMacBook-Pro.local with PID 17515 (started by vuffy in /Users/vuffy/IdeaProjects/SpringBoot-o2o)
 2021-08-03 09:20:53.507 [main] INFO  cn.vuffy.o2o.dao.UserProductMapDaoTest - No active profile set, falling back to default profiles: default
 2021-08-03 09:20:56.608 [main] INFO  cn.vuffy.o2o.dao.UserProductMapDaoTest - Started UserProductMapDaoTest in 3.604 seconds (JVM running for 4.795)
+2021-08-03 20:07:41.215 [main] INFO  cn.vuffy.o2o.O2oApplication - Starting O2oApplication on liliansongdeMacBook-Pro.local with PID 20494 (/Users/vuffy/IdeaProjects/SpringBoot-o2o/target/classes started by vuffy in /Users/vuffy/IdeaProjects/SpringBoot-o2o)
+2021-08-03 20:07:41.218 [main] INFO  cn.vuffy.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2021-08-03 20:07:43.652 [main] INFO  cn.vuffy.o2o.O2oApplication - Started O2oApplication in 2.808 seconds (JVM running for 4.17)
+2021-08-03 20:33:02.618 [main] INFO  cn.vuffy.o2o.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest on liliansongdeMacBook-Pro.local with PID 21538 (started by vuffy in /Users/vuffy/IdeaProjects/SpringBoot-o2o)
+2021-08-03 20:33:02.620 [main] INFO  cn.vuffy.o2o.dao.ProductSellDailyDaoTest - No active profile set, falling back to default profiles: default
+2021-08-03 20:33:06.075 [main] INFO  cn.vuffy.o2o.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 4.062 seconds (JVM running for 5.403)
+2021-08-03 20:51:23.070 [main] INFO  cn.vuffy.o2o.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest on liliansongdeMacBook-Pro.local with PID 22043 (started by vuffy in /Users/vuffy/IdeaProjects/SpringBoot-o2o)
+2021-08-03 20:51:23.072 [main] INFO  cn.vuffy.o2o.dao.ProductSellDailyDaoTest - No active profile set, falling back to default profiles: default
+2021-08-03 20:51:25.785 [main] INFO  cn.vuffy.o2o.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 3.042 seconds (JVM running for 4.049)
+2021-08-03 21:58:25.813 [main] INFO  cn.vuffy.o2o.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest on liliansongdeMacBook-Pro.local with PID 22533 (started by vuffy in /Users/vuffy/IdeaProjects/SpringBoot-o2o)
+2021-08-03 21:58:25.816 [main] INFO  cn.vuffy.o2o.dao.ProductSellDailyDaoTest - No active profile set, falling back to default profiles: default
+2021-08-03 21:58:28.944 [main] INFO  cn.vuffy.o2o.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 3.555 seconds (JVM running for 4.877)
